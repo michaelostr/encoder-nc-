@@ -12,14 +12,14 @@ def encode(num):
 
 # Michael Ostrowski
 
-def decode():
-    pass
-
-
-
-
-
-
+def decode(encoded_num):
+     decoded_num = ''
+    for i in encoded_num:
+        digit = int(i) - 3
+        if digit < 0:
+            digit += 10
+        decoded_num += str(digit)
+    return decoded_num
 
 def main():
     num=''
